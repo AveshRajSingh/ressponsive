@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid rgb(129, 188, 215);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 4vw;
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.nav-part2 h4 {
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
+.nav i {
+    font-size: 2vw;
+    display: none;
+}
+
+.content {
+    height: calc(100% - 100px);
+    display: flex;
+    position: relative;
+}
+
+.left {
+    padding: 3vw 4vw;
+    width: 55%;
+    height: 100%;
+    line-height: 50px;
+}
+
+.right {
+    width: 45%;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.left span {
+    color: aqua;
+}
+
+button {
+    height: 3vw;
+    width: 8vw;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav {
+        background-color: aqua;
+        border: none;
+        height: 60px;
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+    }
+
+    .nav-part2 h4 {
+        display: none;
+    }
+
+    .nav-part2 i {
+        font-size: 6vw;
+        display: block;
+    }
+
+    .content {
+        height: calc(100% - 60px);
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .left {
+        height: 50%;
+        width: 100%;
+    }
+
+    .right {
+        height: 50%;
+        width: 100%;
+    }
+
+}
